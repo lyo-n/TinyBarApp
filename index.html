@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TinyBar</title>
+<meta name="description" content="TinyBar hides the menu bar icons you don't need. Built for macOS 27.">
+<style>
+:root { color-scheme: light dark; --text: #1d1d1f; --muted: #6e6e73; --bg: #f5f5f7; --card: #fff; --link: #0066cc; }
+@media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --muted: #a1a1a6; --bg: #000; --card: #1c1c1e; --link: #4da3ff; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 56px 16px 40px; }
+a { color: var(--link); text-decoration: none; }
+header { text-align: center; margin-bottom: 40px; }
+header img { width: 96px; height: 96px; }
+h1 { font-size: 44px; margin: 12px 0 4px; letter-spacing: -0.02em; }
+.tagline { font-size: 21px; color: var(--muted); margin: 0 0 16px; }
+.badge { display: inline-block; padding: 8px 18px; border-radius: 999px; background: var(--text); color: var(--bg); font-weight: 600; font-size: 15px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 0 0 40px; padding: 0; list-style: none; }
+.features li { background: var(--card); border-radius: 16px; padding: 18px 20px; }
+.features b { display: block; margin-bottom: 4px; }
+.features span { color: var(--muted); font-size: 15px; }
+.shots { display: grid; gap: 16px; }
+.shots img { width: 100%; height: auto; border-radius: 14px; display: block; }
+footer { margin-top: 48px; text-align: center; font-size: 14px; color: var(--muted); }
+footer p { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<img src="assets/icon.png" alt="" width="96" height="96">
+<h1>TinyBar</h1>
+<p class="tagline">Hide the menu bar icons you don't need. Built for macOS 27.</p>
+<span class="badge">Coming soon to the Mac App Store</span>
+</header>
+<ul class="features">
+<li><b>One click</b><span>Hide or show secondary icons with the toggle. Right-click it for the menu.</span></li>
+<li><b>⌘-drag to organize</b><span>A glass outline marks where the hidden area begins. Drop an icon to its left to hide it.</span></li>
+<li><b>Auto-hide and peek</b><span>Hide icons again after 5 s to 5 min, and peek at them by hovering over the toggle.</span></li>
+<li><b>Notch-aware</b><span>Accounts for the camera housing on MacBook Air and MacBook Pro displays.</span></li>
+<li><b>Keep awake</b><span>Stop your Mac from sleeping during presentations, renders, or downloads.</span></li>
+<li><b>Private by design</b><span>No permissions, no network access, no data collection. 12 languages.</span></li>
+</ul>
+<div class="shots">
+<img src="assets/01_hero_macos27.jpg" alt="One click to declutter" width="1600" height="1000" loading="lazy">
+<img src="assets/01_declutter_macos27.jpg" alt="Declutter your menu bar" width="1600" height="1000" loading="lazy">
+<img src="assets/04_customize_styles.jpg" alt="Four toggle icon styles" width="1600" height="1000" loading="lazy">
+<img src="assets/03_lightweight_native_macos27.jpg" alt="Lightweight and private" width="1600" height="1000" loading="lazy">
+<img src="assets/05_real_native_settings.jpg" alt="Native settings" width="1600" height="1000" loading="lazy">
+</div>
+<footer id="support">
+<p>Support and feedback: <a href="mailto:yandaihor@gmail.com">yandaihor@gmail.com</a></p>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+<p>© 2026 Ihor Yanda</p>
+</footer>
+</main>
+</body>
+</html>
